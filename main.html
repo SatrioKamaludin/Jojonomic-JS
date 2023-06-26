@@ -39,12 +39,19 @@
         var number = 1000;
         var number2 = 100;
 
+        // Math operator + - / * %
+        var new_number = number + number2; //1100
+        new_number++; //increment +1
+        new_number--; //decrement -1
+
+        // number = number + number2;
+        number += number2; //same as above
+
         var output = text + " " + text2; //Coding School old edition
-        var output2 = number + number2; //1100
 
         // 1. Choosing id "wrap"
         // 2. Use innerHTML method to fill a content
-        document.getElementById("wrap").innerHTML = output2;
+        document.getElementById("wrap").innerHTML = number;
     </script>
 </body>
 
