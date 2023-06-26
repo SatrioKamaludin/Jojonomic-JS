@@ -38,6 +38,7 @@
         // Number data type
         var number = 1000;
         var number2 = 100;
+        var number3 = 123.123;
 
         // Math operator + - / * %
         // var new_number = number + number2; //1100
@@ -49,13 +50,21 @@
         // new_number--; //decrement -1
 
         // number = number + number2;
-        number += number2; //same as above
+        // number += number2; //same as above
+
+        // Number method
+        // toFixed(n) toString() random() min(a, b, c) max(a, b, c)
+        // var new_number = number3.toFixed() //123.123 becomes 123, toFixed(1) will preserve 1 decimal and output 123.1 and so on
+        // var new_number = number3.toString() + number3; //first var will turn into string, which can no longer math operated and will output 123.123123.123
+        // var new_number = Math.random(); //randomize number
+        // var new_number = Math.min(number, number2, number3) //choose smallest of numbers
+        var new_number = Math.max(number, number2, number3) //choose biggest of numbers
 
         var output = text + " " + text2; //Coding School old edition
 
         // 1. Choosing id "wrap"
         // 2. Use innerHTML method to fill a content
-        document.getElementById("wrap").innerHTML = number;
+        document.getElementById("wrap").innerHTML = new_number;
     </script>
 </body>
 
