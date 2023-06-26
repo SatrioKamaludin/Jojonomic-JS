@@ -142,8 +142,22 @@
 
         // Array Data type
         // reminder that array index always starts from 0
-        var box = ["Hilman", "Endy", "Kata"];
-        document.getElementById("wrap").innerHTML = `Their names are ${box}`; //Output: Hilman,Endy,kata. box[1]: Endy
+        // var box = ["Hilman", "Endy", "Kata"];
+        // document.getElementById("wrap").innerHTML = `Their names are ${box}`; //Output: Hilman,Endy,kata. box[1]: Endy
+
+        // sort, reverse, concat, length, join("separator")
+        var names = ["Hilman", "Endy", "Kata"];
+        var names2 = ["yalla","hakka"];
+        var names3 = ["koph"];
+        document.getElementById("wrap").innerHTML = names.concat(names2, names3).join(" | "); 
+        // sort(): Endy,Hilman,kata. 
+        // reverse(): Kata,Endy,Hilman. 
+        // names.concat(names2): Hilman,Endy,Kata,yalla,hakka. 
+        // names.concat(names2, names3): Hilman,Endy,Kata,yalla,hakka,koph.
+        // names.length: 3
+        // names.concat(names2).length: 5
+        // names.join(" | "): Hilman | Endy | Kata
+        // names.concat(names2, names3).join(" | "): Hilman | Endy | Kata | yalla | hakka | koph
 
     </script>
 </body>
