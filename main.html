@@ -119,10 +119,27 @@
         // printText("Coding School", "alphabeta")
 
         // return in javascript
+        // function printText(){
+        //     return "Coding school";
+        // }
+        // document.getElementById("wrap").innerHTML = printText();
+
+        // Variable scope
+
+        //global
+        var text = "Coding school 123"
+
         function printText(){
-            return "Coding school";
+            //local
+            var text2 = "other site"
+
+            //global
+            text3 = "what site?" //without var inside function this will turn into global variable
         }
-        document.getElementById("wrap").innerHTML = printText();
+
+        printText();
+        document.getElementById("wrap").innerHTML = text3;
+
     </script>
 </body>
 
