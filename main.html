@@ -110,13 +110,19 @@
         // printText();
 
         // function with parameters
-        function printText(name, name2){
-            var text = name + " " + name2 + " final edition";
-            document.getElementById("wrap").innerHTML = text;
-        }
+        // function printText(name, name2){
+        //     var text = name + " " + name2 + " final edition";
+        //     document.getElementById("wrap").innerHTML = text;
+        // }
 
         // calling with param(s)
-        printText("Coding School", "alphabeta")
+        // printText("Coding School", "alphabeta")
+
+        // return in javascript
+        function printText(){
+            return "Coding school";
+        }
+        document.getElementById("wrap").innerHTML = printText();
     </script>
 </body>
 
