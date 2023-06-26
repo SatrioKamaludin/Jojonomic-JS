@@ -27,18 +27,19 @@
         // Name can include alphabet, number, _ and $
         // Case sensitive
         // 'Reserved words' are not allowed
-        var x = 1234567;
-        var savings = 100000;
+        
+        // var x = 1234567;
+        // var savings = 100000;
 
         // String data type
-        var text = "Coding School";
-        var text2 = "old edition";
+        // var text = "Coding School";
+        // var text2 = "old edition";
         // text2 = "new edition"; this will override text2 value
 
         // Number data type
-        var number = 1000;
-        var number2 = 100;
-        var number3 = 123.123;
+        // var number = 1000;
+        // var number2 = 100;
+        // var number3 = 123.123;
 
         // Math operator + - / * %
         // var new_number = number + number2; //1100
@@ -87,15 +88,26 @@
 
         // parseInt parseFloat
         // var name2 = "120"
-        //var name3 = "120.25"
-        //var result = parseInt(name2); //output 120 as integer value
-        //var result = parseFloat(name3); //output 120.25 as decimal value
+        // var name3 = "120.25"
+        // var result = parseInt(name2); //output 120 as integer value
+        // var result = parseFloat(name3); //output 120.25 as decimal value
 
-        var output = text + " " + text2; //Coding School old edition
+        //var output = text + " " + text2; //Coding School old edition
 
         // 1. Choosing id "wrap"
         // 2. Use innerHTML method to fill a content
-        document.getElementById("wrap").innerHTML = result;
+        // document.getElementById("wrap").innerHTML = result;
+
+        // FUNCTION
+        // writing function
+        function printText(){
+            alert("Welcome!");
+            var x = "Coding School"
+            document.getElementById("wrap").innerHTML = x;
+        }
+
+        // calling function
+        printText();
     </script>
 </body>
 
