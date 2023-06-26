@@ -100,14 +100,23 @@
 
         // FUNCTION
         // writing function
-        function printText(){
-            alert("Welcome!");
-            var x = "Coding School"
-            document.getElementById("wrap").innerHTML = x;
-        }
+        // function printText(){
+        //     alert("Welcome!");
+        //     var x = "Coding School"
+        //     document.getElementById("wrap").innerHTML = x;
+        // }
 
         // calling function
-        printText();
+        // printText();
+
+        // function with parameters
+        function printText(name){
+            var text = name + " final edition";
+            document.getElementById("wrap").innerHTML = text;
+        }
+
+        // calling with param(s)
+        printText("Coding School")
     </script>
 </body>
 
