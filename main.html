@@ -65,15 +65,30 @@
         // var new_number = Math.ceil(number3) //rounded number3(123.123) to it's highest ceiling integer, which outputs 124
         // var new_number = Math.floor(number3) //rounded number3(123.123) to it's lowest floor integer, which outputs 123
 
-        var x = 10; // range
-        var y = 5; // minimum value
-        var new_number = Math.floor(Math.random() * x) + y; (will generate as low as 5 and as high as 15 when page refreshed)
+        // var x = 10; // range
+        // var y = 5; // minimum value
+        // var new_number = Math.floor(Math.random() * x) + y; // (will generate as low as 5 and as high as 15 when page refreshed)
+
+        // String Method
+        // length indexOf lastIndexof search charAt
+        // toUpperCase() toLowerCase() replace 
+        // substring(start, end), substr(start, length)
+        var name = "Hilman Ramadhan";
+        // var result = name.length; //output 15
+        // var result = name.indexOf("n"); //output 5, H = 0, i = 1,..., n=5
+        // var result = name.lastIndexOf("n"); //output 14, ..., h = 12, a = 13, n = 14
+        // var result = name.search("Rama"); //output 7, " " = 6, R = 7
+        // var result = name.charAt(0); //output H, i = 1, 4 = a,...
+        // var result = name.toUpperCase(); //output HILMAN RAMADHAN
+        // var result = name.toLowerCase(); //output hilman ramadhan
+        // var result = name.replace("Hilman","Sakan"); //output Sakan Ramadhan
+
 
         var output = text + " " + text2; //Coding School old edition
 
         // 1. Choosing id "wrap"
         // 2. Use innerHTML method to fill a content
-        document.getElementById("wrap").innerHTML = new_number;
+        document.getElementById("wrap").innerHTML = result;
     </script>
 </body>
 
