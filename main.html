@@ -21,7 +21,7 @@
     <div id="wrap"></div>
     <script>
         // JS code
-        
+
         // Variable declaration
         // Name starts with alphabet, $, or _
         // Name can include alphabet, number, _ and $
@@ -56,9 +56,18 @@
         // toFixed(n) toString() random() min(a, b, c) max(a, b, c)
         // var new_number = number3.toFixed() //123.123 becomes 123, toFixed(1) will preserve 1 decimal and output 123.1 and so on
         // var new_number = number3.toString() + number3; //first var will turn into string, which can no longer math operated and will output 123.123123.123
-        // var new_number = Math.random(); //randomize number
+        // var new_number = Math.random(); //randomize number between 0 to 1
         // var new_number = Math.min(number, number2, number3) //choose smallest of numbers
-        var new_number = Math.max(number, number2, number3) //choose biggest of numbers
+        // var new_number = Math.max(number, number2, number3) //choose biggest of numbers
+
+        // round() ceil() floor() ObjectMethods(example: abs, log)
+        // var new_number = Math.round(number3) //rounded number3(123.123) to it's closest, which outputs 123
+        // var new_number = Math.ceil(number3) //rounded number3(123.123) to it's highest ceiling integer, which outputs 124
+        // var new_number = Math.floor(number3) //rounded number3(123.123) to it's lowest floor integer, which outputs 123
+
+        var x = 10; // range
+        var y = 5; // minimum value
+        var new_number = Math.floor(Math.random() * x) + y; (will generate as low as 5 and as high as 15 when page refreshed)
 
         var output = text + " " + text2; //Coding School old edition
 
