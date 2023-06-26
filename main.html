@@ -149,15 +149,27 @@
         var names = ["Hilman", "Endy", "Kata"];
         var names2 = ["yalla","hakka"];
         var names3 = ["koph"];
-        document.getElementById("wrap").innerHTML = names.concat(names2, names3).join(" | "); 
-        // sort(): Endy,Hilman,kata. 
-        // reverse(): Kata,Endy,Hilman. 
+        // document.getElementById("wrap").innerHTML = names.concat(names2, names3).join(" | "); 
+        // names.sort(): Endy,Hilman,kata. 
+        // names.reverse(): Kata,Endy,Hilman. 
         // names.concat(names2): Hilman,Endy,Kata,yalla,hakka. 
         // names.concat(names2, names3): Hilman,Endy,Kata,yalla,hakka,koph.
         // names.length: 3
         // names.concat(names2).length: 5
         // names.join(" | "): Hilman | Endy | Kata
         // names.concat(names2, names3).join(" | "): Hilman | Endy | Kata | yalla | hakka | koph
+
+        // splice->add(start, remove, fill), pop, push, shift(), unshift
+        // names.splice(2, 0, "emmy"); //output Hilman,Endy,emmy,Kata. (2, 1, "emmy"): Hilman,Endy,emmy. (2, 1, "emmy", "avdol"): Hilman,Endy,emmy,avdol
+        // names.splice(2, 1); : Hilman,Endy
+
+        // names.pop();// Hilman,Endy
+        // var name = names.pop(); //output innerHTML = name: Kata. 
+        // names.push("lakata"); //output Hilman,Endy,Kata,lakata.
+        // names.shift(); //output Endy,Kata
+        // names.unshift("matoka"); //output: matoka,Hilman,Endy,Kata
+        document.getElementById("wrap").innerHTML = names;
+
 
     </script>
 </body>
