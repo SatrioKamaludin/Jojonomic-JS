@@ -27,7 +27,7 @@
         // Name can include alphabet, number, _ and $
         // Case sensitive
         // 'Reserved words' are not allowed
-        
+
         // var x = 1234567;
         // var savings = 100000;
 
@@ -127,18 +127,23 @@
         // Variable scope
 
         //global
-        var text = "Coding school 123"
+        // var text = "Coding school 123"
 
-        function printText(){
-            //local
-            var text2 = "other site"
+        // function printText(){
+        //     //local
+        //     var text2 = "other site"
 
-            //global
-            text3 = "what site?" //without var inside function this will turn into global variable
-        }
+        //     //global
+        //     text3 = "what site?" //without var inside function this will turn into global variable
+        // }
 
-        printText();
-        document.getElementById("wrap").innerHTML = text3;
+        // printText();
+        // document.getElementById("wrap").innerHTML = text3;
+
+        // Array Data type
+        // reminder that array index always starts from 0
+        var box = ["Hilman", "Endy", "Kata"];
+        document.getElementById("wrap").innerHTML = `Their names are ${box}`; //Output: Hilman,Endy,kata. box[1]: Endy
 
     </script>
 </body>
